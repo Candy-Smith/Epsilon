@@ -1,24 +1,12 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epsilon.Server", "Epsilon.Server.csproj", "{6b7aa0d3-fc3d-f2b3-70bd-6022ae1f6a88}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epsilon.Editor", "Epsilon.Editor.csproj", "{87c067e1-8d5b-fc96-81a1-3f1f0e697082}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6b7aa0d3-fc3d-f2b3-70bd-6022ae1f6a88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6b7aa0d3-fc3d-f2b3-70bd-6022ae1f6a88}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6b7aa0d3-fc3d-f2b3-70bd-6022ae1f6a88}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6b7aa0d3-fc3d-f2b3-70bd-6022ae1f6a88}.Release|Any CPU.Build.0 = Release|Any CPU
-		{87c067e1-8d5b-fc96-81a1-3f1f0e697082}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{87c067e1-8d5b-fc96-81a1-3f1f0e697082}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{87c067e1-8d5b-fc96-81a1-3f1f0e697082}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{87c067e1-8d5b-fc96-81a1-3f1f0e697082}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
