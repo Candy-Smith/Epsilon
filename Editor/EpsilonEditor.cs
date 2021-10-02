@@ -10,6 +10,7 @@ namespace EpsilonServer.EpsilonClientAPI.Editor
         private string email = "";
         private string apikey;
         private string game_name;
+        private string invoice;
         private string game_package;
         private string genre;
 
@@ -52,9 +53,10 @@ namespace EpsilonServer.EpsilonClientAPI.Editor
             GUILayout.Label("Step1. Put your email here:");
             email = EditorGUILayout.TextField("Email",email);
             game_name = EditorGUILayout.TextField("Game name",game_name);
+            invoice = EditorGUILayout.TextField("Invoice number",invoice);
             if (GUILayout.Button("Register game") && email != "")
             {
-                EpsilonClientAPI.SendEditorRequiest("/system/register_game", "game_name="+game_name+"&email="+email+"&match3=Yes" +"&send_mail=Yes", result =>
+                EpsilonClientAPI.SendEditorRequiest("/system/register_game", "game_name="+game_name+"&email="+email+"&match3=Yes" +"&send_mail=Yes" + "&invoice=" + invoice, result =>
                 {
                     if (result != null)
                     {
