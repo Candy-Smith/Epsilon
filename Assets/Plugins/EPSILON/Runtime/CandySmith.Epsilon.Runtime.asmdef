@@ -1,0 +1,23 @@
+{
+    "name": "Epsilon.Server",
+    "rootNamespace": "",
+    "references": [
+        "GUID:478a2357cc57436488a56e564b08d223",
+        "GUID:f309cab5349e89043a368ab460700e08"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "Epsilon.Server",
+            "expression": "",
+            "define": "EPSILON"
+        }
+    ],
+    "noEngineReferences": false
+}
