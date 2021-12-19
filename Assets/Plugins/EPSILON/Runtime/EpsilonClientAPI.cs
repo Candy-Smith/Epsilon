@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
+using UnityEditor;
 #if UNITY_EDITOR
 using Unity.EditorCoroutines.Editor;
 #endif
@@ -21,7 +22,7 @@ namespace EpsilonServer.EpsilonClientAPI
         {
             if (THIS == null) THIS = this;
             else if (THIS != this) Destroy(gameObject);
-            serverSettings = Resources.Load<ServerSettings>("Scriptable/ServerSettings");
+            serverSettings = (ServerSettings)AssetDatabase.LoadMainAssetAtPath("Assets/Plugins/EPSILON/Prefabs/ServerSettings.asset");
         }
 
         private void Start()
