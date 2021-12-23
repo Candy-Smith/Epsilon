@@ -22,7 +22,7 @@ namespace EpsilonServer.EpsilonClientAPI
         {
             if (THIS == null) THIS = this;
             else if (THIS != this) Destroy(gameObject);
-            serverSettings = (ServerSettings)AssetDatabase.LoadMainAssetAtPath("Assets/Plugins/EPSILON/Prefabs/ServerSettings.asset");
+            serverSettings = Resources.Load<ServerSettings>("ServerSettings");
         }
 
         private void Start()

@@ -28,7 +28,7 @@ namespace EpsilonServer.EpsilonClientAPI.Editor
         [MenuItem("Epsilon server/Settings")]
         public static void ServerSettings()
         {
-            Selection.activeObject = AssetDatabase.LoadMainAssetAtPath("Assets/Plugins/EPSILON/Prefabs/ServerSettings.asset");
+            Selection.activeObject = AssetDatabase.LoadMainAssetAtPath("Assets/Plugins/EPSILON/Resources/ServerSettings.asset");
         }  
 
         public static void ShowWindow()
@@ -62,7 +62,7 @@ namespace EpsilonServer.EpsilonClientAPI.Editor
                     {
                         Debug.Log("result ==>  " + result.downloadHandler.text);
                         var resultArray = JsonUtility.FromJson<APIKeys>(result.downloadHandler.text);
-                        var serverSettings = AssetDatabase.LoadAssetAtPath<ServerSettings>("Assets/Plugins/EPSILON/Prefabs/ServerSettings.asset");
+                        var serverSettings = AssetDatabase.LoadAssetAtPath<ServerSettings>("Assets/Plugins/EPSILON/Resources/ServerSettings.asset");
                         serverSettings.APIKey = resultArray.api_key;
                         serverSettings.APISecret = resultArray.api_secret;
                         EditorUtility.SetDirty(serverSettings);
